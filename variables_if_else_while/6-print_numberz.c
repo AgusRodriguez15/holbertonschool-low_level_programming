@@ -7,13 +7,13 @@
 int main(void)
 {
 
-        int n = 48;
+	int n = 48;
 	int c = 57;
 
-        for (n = 48; n <= c; n++)
-        {
-        putchar(n);
-        }
-        putchar('\n');
-        return (0);
+	for (n = 48; n <= c; n++)
+{
+	putchar(n);
+}
+	putchar('\n');
+	return (0);
 }
