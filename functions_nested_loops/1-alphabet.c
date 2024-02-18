@@ -1,23 +1,24 @@
-#include <main.h>
+#include "main.h"
 /**
  * main - print agus
  *
  * Return: Always 0 (Success)
  */
+
+
 void print_alphabet(void)
 {
 
-       int a = 97;
+        char a = 97;
 
 
-        while ( a < 123) {
+        while ( a <= 123) 
+	{
 
-        putchar(a);
-
-        a++;
+        _putchar(a);
+	a++;
 
         }
-        putchar('\n');
-         return (0);
+        _putchar('\n');
 
 }
