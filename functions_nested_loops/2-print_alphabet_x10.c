@@ -6,7 +6,7 @@
  */
 
 
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 
         char a = 97;
@@ -14,7 +14,6 @@ void print_alphabet(void)
 
         while (a <= 122)
         { 
-        _putchar(a);
         a++;
 
         }
