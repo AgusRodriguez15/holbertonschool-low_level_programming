@@ -1,14 +1,13 @@
-#include <stdio.h>
-
+#include <main.h>
 /**
  * main - print agus
  *
  * Return: Always 0 (Success)
  */
-void print_alphabet() {
+void print_alphabet(void)
+{
 
-
-       char a = 97;
+       int a = 97;
 
 
         while ( a < 123) {
@@ -19,10 +18,6 @@ void print_alphabet() {
 
         }
         putchar('\n');
-         
-}
-int main() {
-    print_alphabet();   // Test the function
-    return 0;
-}
+         return (0);
 
+}
