@@ -8,7 +8,7 @@
 void print_alphabet() {
 
 
-       int a = 97;
+       char a = 97;
 
 
         while ( a < 123) {
@@ -20,5 +20,9 @@ void print_alphabet() {
         }
         putchar('\n');
          
-
 }
+int main() {
+    print_alphabet();   // Test the function
+    return 0;
+}
+
