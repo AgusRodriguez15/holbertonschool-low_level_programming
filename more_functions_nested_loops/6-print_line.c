@@ -3,13 +3,15 @@
 void print_line(int n)
 {
 	
-	int b = 0;
+	
 
 	if (n > 0)
 	{
-		while (b < 0)
+		int b;
+		for (b = 1; b <= n; b++)
+		{
 		_putchar('_');
-		b++;
+		}
 	}
 	
 		_putchar('\n');
