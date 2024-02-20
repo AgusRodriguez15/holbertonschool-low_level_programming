@@ -2,11 +2,11 @@
 
 void print_numbers(void)
 {
-	
+	int n;
 
-	for (int a = 0; a <= 9; a++)
+	for (n = 0; n <=9; n++)
 	{
-		_putchar(a);
-		_putchar('\n');
-	}	
+		_putchar(n + '0');
+	}
+	_putchar('\n');	
 }
