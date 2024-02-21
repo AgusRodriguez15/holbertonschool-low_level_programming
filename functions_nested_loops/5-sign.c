@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_sign - print n
+ * print_sign - return one if n is greater than zero,return zero,return -one
  *
  * Return: Always 0 (Success)
  */
