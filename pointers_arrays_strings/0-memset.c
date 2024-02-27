@@ -6,9 +6,9 @@
  *
  * Return: Nothing.
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, int n)
 {
-	unsigned int i = 0;
+	 int i = 0;
 
 	for (i = 0; i <= n; i++)
 	{
