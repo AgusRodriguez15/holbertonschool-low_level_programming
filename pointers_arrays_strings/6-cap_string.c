@@ -6,20 +6,11 @@
  */
 char *cap_string(char *str)
 {
-	int i;
-	int newWord = 0;
-	
-	while (str[i] != '\0')
-	{
-		i++;
-	
-	 if (newWord && (str[i] >= 'a' && str[i] <= 'z'))
-                  
-                            str[i] -= 32;
-                            newWord = 0;
-                    }
-	  switch (*str) 
-	  {
+    char *ptr = str;
+    int upp = 1;
+
+    while (*ptr != '\0') {
+        switch (*ptr) {
             case ' ':
             case '\t':
             case '\n':
@@ -33,16 +24,20 @@ char *cap_string(char *str)
             case ')':
             case '{':
             case '}':
-
-		    {
-			    newWord = 1;
-		    }
-		    
-		    {
-			    return (str);
-	  
-	  }  
-	  }
+                upp = 1;
+                break;
+            default:
+                if (upp) {
+                    if (*ptr >= 'a' && *ptr <= 'z') {
+                        *ptr -= 32;
+                    }
+                    upp = 0;
+                }
+                break;
+        }
+        ptr++;
+    }
+    return str;
 }
 
 
