@@ -1,31 +1,26 @@
-#include "main.h"
+#include <stdio.h>
 /**
- * *leet - encodes a string into 1337
- *@s : char
- *@p : char
+ * main - check the code for
  *
  * Return: Always 0.
  */
-
-
-char *leet(char *s) 
+char *leet(char *str) 
 {
-    char *p = s;
-    
-    while (*p != '\0') {
-        if (*p == 'a' || *p == 'A')
-            *p = '4';
-        else if (*p == 'e' || *p == 'E')
-            *p = '3';
-        else if (*p == 'o' || *p == 'O')
-            *p = '0';
-        else if (*p == 't' || *p == 'T')
-            *p = '7';
-        else if (*p == 'l' || *p == 'L')
-            *p = '1';
-        
-        p++;
-    }
-    return s;
+	char *ptr = str;
+	char *leet_chars = "aAeEoOtTlL";
+	char *leet_replacements = "4433007711";
+	int i = 0;
+
+	for (; *ptr != '\0'; ptr++) {
+ 	for (i = 0; leet_chars[i] != '\0'; i++) {
+	if (*ptr == leet_chars[i]) {
+	*ptr = leet_replacements[i];
+	break;
+	}
+	}
+	}
+
+	return str;
 }
+
 
