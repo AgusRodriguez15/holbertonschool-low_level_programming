@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
- *
+ * *memset - fills memory with a constant byte
+ * @s: char
+ * @b: char
+ * @n: int
  * Return: Nothing.
  */
 char *_memset(char *s, char b, int n)
