@@ -2,9 +2,10 @@
 #include <stdio.h>
 /**
  * *_strcat - concatenetes the string pointed to by src
- *_strlen - calculates the length of dest
+ * *_strlen - calculates the length of dest
  *@src : char
  *@dest : char
+ *@n : int
  *
  * Return: Always 0.
  */
