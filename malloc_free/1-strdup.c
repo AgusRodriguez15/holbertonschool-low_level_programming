@@ -2,11 +2,7 @@
 #include <stdlib.h>
 /**
  * _strle - returns length of a string
- *@a : int
- *  *_strdup - returns a pointer to a newly allocated space in memory
- *@i : int
- *@b : int
- *@copy : char
+ * @copy: char
  *
  * Return: Always 0.
  */
@@ -21,6 +17,12 @@ int _strle(char *copy)
 	return (a);
 }
 
+/**
+ * _strdup - p
+ * @str: p
+ *
+ * Return: p
+ */
 char *_strdup(char *str)
 {
 	int i = 0;
