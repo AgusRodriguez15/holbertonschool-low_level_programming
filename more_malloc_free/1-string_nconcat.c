@@ -33,6 +33,8 @@ char *string_nconcat(char *s1, char *s2, int n)
 		s2 = "";
 	lar1 = _strlen(s1);
 	s3 = malloc(sizeof(char) * (lar1 + n + 1));
+	if (s3 == NULL)
+		return (NULL);
 	for (i = 0; i <= lar1; i++)
 		s3[i] = s1[i];
 	for (i = 0; i < n; i++)
