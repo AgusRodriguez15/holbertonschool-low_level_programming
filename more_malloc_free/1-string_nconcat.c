@@ -7,16 +7,19 @@
  */
 int _strlen(char *dest)
 {
-        int i = 0;
+	int i = 0;
 
-        while (dest[i] != '\0')
-        {
-        i++;
-        }
-        return (i);
+	while (dest[i] != '\0')
+	{
+	i++;
+	}
+	return (i);
 }
 /**
- * main - check the code
+ * string_nconcat - check the code
+ *@s1:char
+ *@s2:char
+ *@n:int
  *
  * Return: Always 0.
  */
@@ -25,7 +28,6 @@ char *string_nconcat(char *s1, char *s2, int n)
 	char *s3;
 	int i = 0;
 	int lar1;
-	
 
 	if (s1 == NULL)
 		s1 = "";
