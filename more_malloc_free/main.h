@@ -1,4 +1,4 @@
 #include<stdlib.h>
 void *malloc_checked(unsigned int b);
 char *string_nconcat(char *s1, char *s2, int n);
-void *_calloc(int nmemb, int size);
+void *_calloc(unsigned int nmemb, unsigned int size);
