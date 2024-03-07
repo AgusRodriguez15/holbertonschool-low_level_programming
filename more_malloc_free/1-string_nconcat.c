@@ -25,20 +25,19 @@ char *string_nconcat(char *s1, char *s2, int n)
 	char *s3;
 	int i = 0;
 	int lar1;
-	int lar2;
+	
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
 	lar1 = _strlen(s1);
-	lar2 = _strlen(s2);
 	s3 = malloc(sizeof(char) * (lar1 + n + 1));
-	for (i = 0; i < lar1; i++)
+	for (i = 0; i <= lar1; i++)
 		s3[i] = s1[i];
-	for (i = 0; i < n && lar2; i++)
-		s3[lar1 + 1] = s2[i];
-	s3[lar1 + n + 1] = '\0';
+	for (i = 0; i < n; i++)
+		s3[lar1 + i] = s2[i];
+	s3[lar1 + n] = '\0';
 	return (s3);
 }
 
