@@ -6,7 +6,7 @@
  *
  * Return: Nothing.
  */
-void *_calloc(unsigned int nmemb, unsigned int size)	
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *a;
 	unsigned int i = 0;
@@ -16,12 +16,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (size <= 0)
 		return (NULL);
 	a = malloc(size * nmemb);
-	
 	if (a == NULL)
 		return (NULL);
 	for (i = 0; i < size * nmemb; i++)
 	{
 		a[i] = 0;
 	}
-	return a;
+	return (a);
 }
