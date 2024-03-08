@@ -45,6 +45,7 @@ int main(void)
     strcpy(a + 4, " School! :)\n");
     a[97] = '!';
     simple_print_buffer(a, 98);
+    printf("\n%c	\n", a[97]);
     free(a);
     return (0);
 }
