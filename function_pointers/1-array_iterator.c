@@ -3,6 +3,7 @@
  *  array_iterator - prints an integer
  *@array: gd
  *@size: the integer to print
+ *@action: pointer
  *
  * Return: Nothing.
  */
