@@ -3,6 +3,7 @@
 #include <stdlib.h>
 /**
  * print_list - check the code
+ * @h: puntero a la lista
  *
  * Return: Always 0.
  */
@@ -14,13 +15,16 @@ size_t print_list(const list_t *h)
 	{
 	if (h->str == NULL)
 	{
-        printf ("[0] (nil)");
+	printf("[0] (nil)");
 	}
+	else
+	{
+	printf("[%lu]  %s\n", h->len, h->str);
+	}
+	h = h->next;
 	cont++;
-	printf ("[%lu]  %s\n", h->len, h->str);
-		 h = h->next;
 	}
-return (cont);
+	return (cont);
 }
 
 
