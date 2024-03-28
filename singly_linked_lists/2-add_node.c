@@ -3,6 +3,23 @@
 #include <string.h>
 #include "lists.h"
 /**
+ *_strlen -  returns the length of a string
+ *@s : char
+ *
+ * Return: Always 0.
+ */
+
+int _strlen(const char *s)
+{
+        int i = 0;
+
+        while (s[i] != '\0')
+        {
+                i++;
+        }
+        return (i);
+}
+/**
  * list_t *add_node - check the codei
  * @head: head
  * @str: str
@@ -24,7 +41,7 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	addNode->len = strlen(str);
+	addNode->len = _strlen(str);
 	addNode->next = *head;
 
 	*head = addNode;
