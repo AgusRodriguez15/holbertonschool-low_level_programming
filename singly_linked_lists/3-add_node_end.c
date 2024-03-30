@@ -11,13 +11,13 @@
 
 int _strlen(const char *s)
 {
-        int i = 0;
+	int i = 0;
 
-        while (s[i] != '\0')
-        {
-        i++;
-        }
-        return (i);
+	while (s[i] != '\0')
+	{
+	i++;
+	}
+	return (i);
 }
 /**
  * list_t *add_node_end - check the codei
@@ -28,33 +28,34 @@ int _strlen(const char *s)
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-        list_t *addNode = (list_t *)malloc(sizeof(list_t));
+	list_t *addNode = (list_t *)malloc(sizeof(list_t));
 
-        if (addNode == NULL)
-                return (NULL);
+	if (addNode == NULL)
+	return (NULL);
 
-        addNode->str = strdup(str);
+	addNode->str = strdup(str);
 
-        if (addNode->str == NULL)
-        {
-                free(addNode);
-                return (NULL);
-        }
+	if (addNode->str == NULL)
+	{
+	free(addNode);
+	return (NULL);
+	}
 
-        addNode->len = _strlen(str);
-        addNode->next = NULL;
+	addNode->len = _strlen(str);
+	addNode->next = NULL;
 
-        if (*head != NULL)
+	if (*head != NULL)
 	{
 		list_t *ulNode = *head;
+
 		while (ulNode->next != NULL)
 		{
 			ulNode = ulNode->next;
 		}
 		ulNode->next = addNode;
-	} else {
-		*head = addNode;
+	} else
+	{
+	*head = addNode;
 	}
 	return (addNode);
 }
-
