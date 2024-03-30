@@ -2,7 +2,7 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
- * print_list - check the code
+ * dlistint_len - check the code
  * @h: puntero a la lista
  *
  * Return: Always 0.
