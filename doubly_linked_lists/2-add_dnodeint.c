@@ -4,29 +4,29 @@
 #include "lists.h"
 /**
  * add_dnodeint -  returns the length of a string
- *@s : char
+ *@head : head
+ *@n: const int
  *
  * Return: Always 0.
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 
-        dlistint_t *addNode = malloc(sizeof(dlistint_t));
+	dlistint_t *addNode = malloc(sizeof(dlistint_t));
 
-        if (addNode == NULL)
-                return (NULL);
+	if (addNode == NULL)
+	return (NULL);
 
-        addNode->n = n;
-        addNode->prev = NULL;
+	addNode->n = n;
+	addNode->prev = NULL;
 	addNode->next = *head;
 
-	 if (*head != NULL) 
+	if (*head != NULL)
 	{
-        (*head)->prev = addNode;
-    	}
+	(*head)->prev = addNode;
+	}
 
-        *head = addNode;
+	*head = addNode;
 
-        return (addNode);
-	
+	return (addNode);
 }
