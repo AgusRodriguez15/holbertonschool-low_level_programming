@@ -1,17 +1,22 @@
 #include "main.h"
-
+/**
+ * print_square - check the code
+ * @size: int
+ *
+ * Return: Always 0.
+ */
 void print_square(int size)
 {
-	if (size > 0)
-	{
-		int b;
-		for (b = 0; b <= size; b++)
+	int a, b;
+
+		for (a = 0; a < size; a++)
 		{
-			int c;
-			for (c = 0; c <= size; c++)
-				_putchar(23);
+			for (b = 0; b < size; b++)
+			_putchar('#');
 			_putchar('\n');
 		}
-	}
+	if (size <= 0)
+	{
 	_putchar('\n');
+	}
 }
